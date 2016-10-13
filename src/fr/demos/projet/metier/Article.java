@@ -35,7 +35,29 @@ public class Article {
 	}
 	
 	
-	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((ref == null) ? 0 : ref.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Article other = (Article) obj;
+		if (ref == null) {
+			if (other.ref != null)
+				return false;
+		} else if (!ref.equals(other.ref))
+			return false;
+		return true;
+	}
 	
 	@Override
 	public String toString() {
@@ -50,11 +72,15 @@ public class Article {
 	
 	// =========== debut getters et setters ================ //
 
+	// getter pour recuperer le stock
+	public Materialise getMat() {
+		return mat;
+	}
 
 	public double getPrixHT() {
 		return prixHT;
 	}
-
+	
 	public void setPrixHT(double prixHT) {
 		this.prixHT = prixHT;
 	}
