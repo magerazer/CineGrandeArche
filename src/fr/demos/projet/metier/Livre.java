@@ -32,18 +32,15 @@ public class Livre extends Article {
 	}
 	
 	
-	
-	
 	@Override
 	public String toString() {
-		return super.toString() + 
-				"isbn=" + isbn + ", auteur=" + auteur + ", genre=" + genre + ", format=" + format + ", nbPages="
-				+ nbPages + ", dateParution=" + dateParution;
-	}
+		return "auteur=" + auteur + ", genre=" + genre + "";
+	}	
+	
 	
 	
 	// =============== début getters et setters =========== //
-	
+		
 	public String getIsbn() {
 		return isbn;
 	}

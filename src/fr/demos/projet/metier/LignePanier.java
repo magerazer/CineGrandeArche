@@ -31,6 +31,14 @@ public class LignePanier {
 	}
 	
 	
+	
+	@Override
+	public String toString() {
+		return "LignePanier [article=" + article + ", quantite=" + quantite + "]";
+	}
+
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

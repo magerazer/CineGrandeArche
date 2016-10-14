@@ -5,6 +5,8 @@ public class ArticleDivers extends Article {
 	private String type;
 	private String caracteristiques;
 
+	
+	// article dematerialise
 	public ArticleDivers(String ref, double prixHT, String nom, String format, String url, String type, String caracteristiques) {
 		super(ref, prixHT, nom, format, url);
 		
