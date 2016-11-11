@@ -46,7 +46,10 @@ public class Panier implements Iterable<LignePanier> {
 		if (qte < 0) {
 			throw new IllegalArgumentException("La quantite est negative");
 		}
-
+		/*
+		 On crée une ligne du panier à partir de l'article car la comparaison de 
+		 2 lignes se fait selon l'article. 2 cas se présentent :
+		 */
 		LignePanier l = new LignePanier(a, qte);
 		int index = panier.indexOf(l);
 

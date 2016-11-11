@@ -43,10 +43,10 @@ public class Main {
 		System.out.println(panier);
 	
 		
+		Commande commande1 = new Commande();
 		
-		panier.vider();
-		System.out.println(panier);
-	
+		commande1.ajouter(panier);
+		
 		
 	}
 
